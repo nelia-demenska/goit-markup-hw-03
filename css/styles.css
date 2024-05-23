@@ -2,7 +2,33 @@ body {
     font-family:"Roboto", sans-serif;
     color: #434455;
     background-color: #fff;}
-ul {list-style-type: none;}
+ul, ol {
+    margin-top: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;}
+    p, h1, h2, h3, h4,h5, h6 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+section {
+    padding: 120px 120px;
+}
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -12,6 +38,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4d5ae5;
 text-decoration: none;
+margin-right: 76px;
 }
 .logo-accent {
     font-family: "Raleway", sans-serif;
@@ -22,6 +49,20 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #2e2f42;
 text-decoration: none;
+}
+.logo, .logo-accent {
+    display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: row;
+gap: 0px;
+}
+.navigation {
+    display: flex;
+}
+.nav-list {
+    display: flex;
+    gap: 40px;
 }
 .nav-list .link {
     font-weight: 500;
@@ -41,9 +82,14 @@ color: #404bbf;
 .nav-list .link:focus {
     color: #404bbf; 
 }
-.address {
-    font-style: normal;
+.adr {
+    margin-left: auto;
 }
+.address {
+    display: flex;
+gap: 40px;
+}
+
 .contacts {
     font-weight: 400;
 font-size: 16px;
@@ -69,11 +115,22 @@ line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
 color: #fff;
+margin: auto;
+width: 496px;
+height: 120px;
 }
 .solutions {
     background-color: #2e2f42;
 }
+.solutions.container {
+
+}
 .button {
+    border-radius: 4px;
+        padding: 16px 32px;
+        display: block;
+        align-items: center;
+        margin:auto;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -99,12 +156,33 @@ background-color: #404BBF;
     letter-spacing: 0.02em;
     color: #434455;  
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .first-section-title {
     font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+}
+.first-list {
+    display: flex;
+    gap: 24px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.first-section-title {
+    padding-bottom: 8px;
 }
 .feature-list {
     font-weight: 400;
@@ -124,9 +202,17 @@ letter-spacing: 0.02em;
 text-align: center;
 text-transform: capitalize;
 color: #2e2f42;
+margin-bottom: 72px;
+}
+.team-list {
+    display: flex;
+    gap: 24px;
 }
 .member-cards {
-    background-color: #FFFFFF;
+    display: block;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background-color: #fff;
 }
 .team-member {
     font-weight: 500;
@@ -135,6 +221,10 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
+padding-bottom: 8px;
+}
+.card-info {
+    padding: 32px 16px;
 }
 .speciality {
     font-weight: 400;
@@ -152,7 +242,21 @@ letter-spacing: 0.02em;
 text-align: center;
 text-transform: capitalize;
 color: #2e2f42;
+margin-bottom: 72px;
 }
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.products {
+    border-bottom: 1px solid #e7e9fc;
+        border-left: 1px solid #e7e9fc;
+        border-right: 1px solid #e7e9fc;
+        padding: 32px 16px;
+}
+
 .service {
     font-weight: 500;
 font-size: 20px;
@@ -187,13 +291,18 @@ text-transform: uppercase;
 color: #f4f4fd;
 text-decoration: none;
 }
+.logo-footer, .logo-accent-footer {
+    padding-top: 100px;
+}
 .footer-text {
     font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
+padding-top: 16px;
 }
+
 .footer-background {
     background-color: #2e2f42;
 }
