@@ -31,10 +31,7 @@ button {
 }
 .header-container {
     display: flex;
-    margin: 0 auto;
-    padding: 0 15px;
 }
-
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -92,6 +89,7 @@ color: #404bbf;
     color: #404bbf; 
 }
 .adr {
+    display: flex;
     margin-left: auto;
 }
 .address {
@@ -253,8 +251,7 @@ text-align: center;
 color: #434455;
 }
 .portfolio-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+padding: 120px 0 120px 0;
 }
 .third-section-title {
     font-weight: 700;
@@ -325,10 +322,11 @@ max-width: 264px
 }
 
 .footer-background {
+    padding: 100px 0;
     background-color: #2e2f42;
 }
 .footer-container {
-    padding: 100px 0;
+   
 }
 .logo-footer {
     display: inline-block;
