@@ -53,14 +53,7 @@ text-transform: uppercase;
 color: #2e2f42;
 text-decoration: none;
 }
-.logo, .logo-accent {
-    display: flex;
-align-items: center;
-justify-content: flex-start;
-flex-direction: row;
-gap: 0px;
-margin-right: 76px;
-}
+
 .navigation {
     display: flex;
     align-items: center;
@@ -70,9 +63,7 @@ margin-right: 76px;
     gap: 40px;
     padding: 24px 0;
 }
-.menu-item {
-    padding: 24px 0;
-}
+
 .nav-list .link {
     padding: 24px 0;
     font-weight: 500;
@@ -93,16 +84,18 @@ color: #404bbf;
     color: #404bbf; 
 }
 .adr {
-    display: flex;
+    font-style: normal;
     margin-left: auto;
 }
 .address {
     display: flex;
-gap: 40px;
-padding: 24px 0;
+    gap: 40px;
+font-style: normal;
 }
 
 .contacts {
+display: block;
+padding: 24px 0;
     font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
